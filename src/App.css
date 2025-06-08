@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(135deg, #0077b6, #ffdd00);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px #002244;
+}
+
+input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 90%;
+  max-width: 320px;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffdd00;
+  color: #002244;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #ffe94d;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* 🔄 Адаптивність для дуже малих екранів */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
